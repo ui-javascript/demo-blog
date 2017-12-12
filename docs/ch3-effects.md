@@ -3,7 +3,7 @@ nav: effects
 search: 特效
 ---
 
-# 特效
+# ch4-特效
 
 主要分为2类
 
@@ -15,3 +15,5 @@ search: 特效
 - animate.css
 
 ## 装饰
+
+- 花纹
