@@ -1,8 +1,6 @@
-# Web前端组件文档
-
 # docute文档
 
-    - https://docute.js.org/#/home
+  - https://docute.js.org/#/home
 
 ```javascript
 cnpm i -g docute-cli
