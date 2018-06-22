@@ -1,0 +1,36 @@
+{
+  "name": "vuepress-blog",
+  "version": "1.0.0",
+  "description": "Static blog based on vuepress.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaoXuSheng/mt-blog.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TaoXuSheng/mt-blog/issues"
+  },
+  "homepage": "https://github.com/TaoXuSheng/mt-blog#readme",
+  "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vuepress": "^0.10.0"
+  },
+  "dependencies": {
+    "element-ui": "^2.3.6",
+    "html2canvas": "^1.0.0-alpha.12",
+    "prismjs": "^1.14.0",
+    "vue": "^2.5.16"
+  }
+}
