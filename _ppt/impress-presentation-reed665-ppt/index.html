@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <base target="_blank">
+</head>
+<body>
+
+<div id="impress">
+
+
+    <div id="first" class="step slide" data-x="-1000" data-y="0">
+        <h1 style="margin-bottom: 15px;">X in Y minutes</h1>
+        <p style="margin-top: 5px;">where X == Vue.js and Y == 15</p>
+        <h3>or if (frontend) then {Vue.js}</h3>
+    </div>
+
+
+    <!-- introduce the author -->
+    <div id="evan" class="step slide" data-x="0" data-y="0">
+        <div class="content">
+            <div class="photo">
+                <a href="https://github.com/yyx990803">
+                    <img width="300" src="https://avatars3.githubusercontent.com/u/499550?s=400&v=4" alt="Evan">
+                </a>
+            </div>
+            <div class="text">
+                <h2>
+                    <q>If something can be easy, <br> why make it hard?</q>
+                </h2>
+                <div class="author">
+                    <em>Evan You</em>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="what-is-vue-1" class="step slide" data-x="1000" data-y="0">
+        <h2>What is Vue.js?</h2>
+        <ul>
+            <li>
+                The Progressive JavaScript Framework
+                <br> For building UI on the web
+            </li>
+            <li>
+                An MIT-licensed open source project
+                <br> <a href="https://github.com/vuejs/vue">https://github.com/vuejs/vue</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="what-is-vue-2" class="step slide" data-x="2000" data-y="0">
+        <h2>What is Vue.js?</h2>
+        <ul>
+            <li>One of the most modern popular frontend libraries/frameworks</li>
+            <li><a href="https://vuejs.org/v2/guide/comparison.html">https://vuejs.org/v2/guide/comparison.html</a></li>
+        </ul>
+        <ul class="gallery">
+            <li><img src="https://vuejs.org/images/logo.png" width="250" alt="Vue"></li>
+            <li><img src="https://angular.io/assets/images/logos/angular/angular.png" width="200" alt="Angular"></li>
+            <li><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+                    width="250"
+                    alt="React"></li>
+        </ul>
+    </div>
+
+    <div id="popular" class="step slide" data-x="3000" data-y="0">
+        <h2>How popular it is?</h2>
+        <ul>
+            <li><a href="http://www.npmtrends.com/@angular/core-vs-angular-vs-react-vs-vue">http://www.npmtrends.com/@angular/core-vs-angular-vs-react-vs-vue</a>
+            </li>
+            <li><a href="https://github.com/trending/javascript?since=monthly">https://github.com/trending/javascript?since=monthly</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="why-vue" class="step slide" data-x="4000" data-y="0">
+        <h2>Why Vue?</h2>
+        <p>
+            <a href="https://vuejs.org/">https://vuejs.org/</a>
+        </p>
+        <ol>
+            <li>Simple, easy to learn</li>
+            <li>Yet powerful</li>
+        </ol>
+    </div>
+
+    <div id="hello-vue" class="step slide" data-x="5000" data-y="0">
+        <h2>Hello Vue</h2>
+        <pre><code class="html">&lt;div id="app"&gt;
+  {{ message }}
+&lt;/div&gt;
+</code></pre>
+
+        <pre><code class="javascript">var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+</code></pre>
+    </div>
+
+    <div id="props-events" class="step slide" data-x="6000" data-y="0">
+        <h2>Components interaction</h2>
+        <div>
+            <img src="https://vuejs.org/images/props-events.png" height="480" alt="props-events.png">
+        </div>
+    </div>
+
+    <div id="vue-loader" class="step slide" data-x="7000" data-y="0">
+        <h2>Single file components</h2>
+        <ul>
+            <li>
+                <a href="https://vuejs.org/v2/guide/single-file-components.html">https://vuejs.org/v2/guide/single-file-components.html</a>
+            </li>
+            <li>
+                <a href="https://github.com/vuejs/vue-loader">https://github.com/vuejs/vue-loader</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="ecosystem" class="step slide" data-x="8000" data-y="0">
+        <h2>Ecosystem</h2>
+        <ul>
+            <li><a href="https://github.com/vuejs/vue-cli">vue-cli</a></li>
+            <li><a href="https://github.com/vuejs/vue-router">vue-router</a></li>
+            <li><a href="https://github.com/vuejs/vuex">vuex</a></li>
+            <li><a href="https://github.com/vuejs/vue-devtools">vue-devtools</a></li>
+        </ul>
+    </div>
+
+    <div id="todo-list" class="step slide" data-x="9000" data-y="0">
+        <h2><a href="https://github.com/reed665/vue-dev-list-demo">Todo list demo</a></h2>
+        <div>
+            <img src="./assets/todo-demo.png" alt="todo-demo.png">
+        </div>
+    </div>
+</div>
+
+<script src="./impress.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
