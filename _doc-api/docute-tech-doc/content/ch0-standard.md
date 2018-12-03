@@ -13,6 +13,9 @@ search: 编程规范
 
 ## HTML编程规范
 
+- 语义化
+- html5 > aside article
+
 ## CSS编程规范
 
 ## JS编程规范
