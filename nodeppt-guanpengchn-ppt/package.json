@@ -8,9 +8,9 @@
     "remove": "rimraf node_modules",
     "preview": "serve -s dist -p 9567",
 
-    "dev": "cd src && nodeppt start",
-    "watch": "cd src && nodeppt start -w",
-    "build": "gulp build",
+    "dev": "cd doc && nodeppt start",
+    "dev:watch": "cd doc && nodeppt start -w",
+    "build:dist": "gulp build",
     "deploy": "gulp deploy"
   },
   "repository": {

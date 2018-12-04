@@ -36,3 +36,8 @@ table th{
 table tr>td:first-child, table th{
     font-weight: normal;
 }
+
+
+.bg-red {
+    background: red;
+}
