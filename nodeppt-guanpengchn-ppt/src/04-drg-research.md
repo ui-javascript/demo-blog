@@ -2,7 +2,7 @@ title: DRG后台开发选型调研
 speaker: aaron
 theme: light
 transition: slide2
-headFiles: /assets/light.css
+headFiles: /assets/css/light.css
 
 [slide]
 
@@ -113,7 +113,7 @@ headFiles: /assets/light.css
 
 ## 整体架构图
 
-![](/assets/DRG-research/1-arc.png)
+![](/assets/images/DRG-research/1-arc.png)
 
 [slide]
 

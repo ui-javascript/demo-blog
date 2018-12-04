@@ -2,7 +2,7 @@ title: The Raft Consensus Algorithm
 speaker: aaron
 theme: light
 transition: slide2
-headFiles: /assets/light.css
+headFiles: /assets/css/light.css
 
 [slide]
 
@@ -28,7 +28,7 @@ headFiles: /assets/light.css
 
 ## Raft User Study
 
-![](/assets/Raft/3-1.png)
+![](/assets/images/Raft/3-1.png)
 
 [slide]
 

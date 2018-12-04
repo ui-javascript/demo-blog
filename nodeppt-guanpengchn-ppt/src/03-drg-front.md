@@ -2,7 +2,7 @@ title: DRG前端方案制定
 speaker: aaron
 theme: colors
 transition: slide2
-headFiles: /assets/colors.css
+headFiles: /assets/css/colors.css
 
 [slide]
 

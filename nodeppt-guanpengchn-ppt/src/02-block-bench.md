@@ -2,7 +2,7 @@ title: Blockbench Notes
 speaker: aaron guan
 theme: light
 transition: slide2
-headFiles: /assets/light.css
+headFiles: /assets/css/light.css
 
 [slide]
 
@@ -61,13 +61,13 @@ headFiles: /assets/light.css
 
 [slide]
 
-[magic data-transition="zoomin"]
+[magic data-transition="horizontal3d"]
 
 ## 3.1 Blockchain Layers
 
 -----
 
-![](/assets/Blockbench/Figure3.png)
+![](/assets/images/Blockbench/Figure3.png)
 
 =====
 
@@ -84,13 +84,13 @@ headFiles: /assets/light.css
 
 [slide]
 
-[magic data-transition="zoomin"]
+[magic data-transition="vertical3d"]
 
 ## 3.2 BLOCKBENCH Implementation
 
 -----
 
-![](/assets/Blockbench/Figure4.png)
+![](/assets/images/Blockbench/Figure4.png)
 
 =====
 
@@ -114,7 +114,7 @@ headFiles: /assets/light.css
 
 [slide]
 
-[magic data-transition="zoomin"]
+[magic data-transition="cover-circle"]
 
 ## 3.3 Evaluation Metrics
 

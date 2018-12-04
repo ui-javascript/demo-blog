@@ -10,7 +10,8 @@
 
     "dev": "cd src && nodeppt start",
     "watch": "cd src && nodeppt start -w",
-    "deploy": "gulp"
+    "build": "gulp build",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",

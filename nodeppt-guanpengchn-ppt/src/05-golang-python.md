@@ -2,7 +2,7 @@ title: golang调用python
 speaker: aaron
 theme: light
 transition: slide2
-headFiles: /assets/light.css
+headFiles: /assets/css/light.css
 
 [slide]
 

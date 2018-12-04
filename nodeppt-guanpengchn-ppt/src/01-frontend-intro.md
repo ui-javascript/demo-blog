@@ -2,22 +2,23 @@ title: 前端生态简介
 speaker: aaron
 theme: colors
 transition: slide2
-headFiles: /assets/colors.css
+headFiles: /assets/css/colors.css
 
 [slide]
 
 # 前端生态简介
+
 ## aaron
 
 [slide]
 
 ## 前端工程师必备技能图
 
-![](/assets/frontend-intro/2-1.png)
+![](/assets/images/frontend-intro/2-1.png)
 
 [slide]
 
-[magic data-transition="zoomin"]
+[magic data-transition="cover-diamond"]
 
 ## 浏览器
 
@@ -31,7 +32,7 @@ headFiles: /assets/colors.css
 
 -----
 
-![](/assets/frontend-intro/2-2.jpg)
+![](/assets/images/frontend-intro/2-2.jpg)
 
 ====
 
@@ -39,7 +40,7 @@ headFiles: /assets/colors.css
 
 [slide]
 
-[magic data-transition="zoomin"]
+[magic data-transition="circle"]
 
 -----
 
@@ -73,7 +74,7 @@ body
 
 ## scss和css
 
-![](/assets/frontend-intro/2-8.png)
+![](/assets/images/frontend-intro/2-8.png)
 
 ====
 
@@ -91,11 +92,11 @@ body
 - Node.js于2009年写成，基于Google的V8
 - 本质都是在补坑
 
-<img src="/assets/frontend-intro/2-3.jpg" height="300"/>
+<img src="/assets/images/frontend-intro/2-3.jpg" height="300"/>
 
 [slide style="background-color:black;"]
 
-[magic data-transition="zoomin"]
+[magic data-transition="move"]
 
 -----
 
@@ -118,7 +119,7 @@ body
 
 ## vscode
 
-![](/assets/frontend-intro/2-7.jpg)
+![](/assets/images/frontend-intro/2-7.jpg)
 
 ====
 
@@ -164,7 +165,7 @@ body
 
 [slide]
 
-[magic data-transition="zoomin"]
+[magic data-transition="earthquake"]
 
 -----
 
@@ -182,8 +183,8 @@ body
 
 ## PWA示例
 
-![](/assets/frontend-intro/2-4.png)
-![](/assets/frontend-intro/2-5.png)
+![](/assets/images/frontend-intro/2-4.png)
+![](/assets/images/frontend-intro/2-5.png)
 
 ====
 
@@ -217,7 +218,7 @@ body
 
 [slide]
 
-[magic data-transition="zoomin"]
+[magic data-transition="newspaper"]
 
 -----
 
@@ -241,7 +242,7 @@ body
 
 ## uglify和mincss
 
-![](/assets/frontend-intro/2-9.png)
+![](/assets/images/frontend-intro/2-9.png)
 
 ====
 
