@@ -1,1 +1,0 @@
-- [webpack.optimaze.CommonsChunkPlugin](https://github.com/webpack/docs/wiki/optimization)
