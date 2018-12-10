@@ -17,7 +17,7 @@ gulp.task('build', ['clean'], () => {
       read: false
     })
     .pipe(shell([
-      'nodeppt generate doc dist -a'
+      'nodeppt generate docs dist -a'
     ]))
 })
 

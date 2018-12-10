@@ -1,3 +1,17 @@
+/* 链接样式 */
+a {
+    color: yellow;
+    padding: 0 3px;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a:hover {
+    color: yellow;
+    border-bottom: none;
+    background-color: transparent;
+}
+
 ul li ul li:before{
     content: "";
 }
@@ -40,4 +54,12 @@ table tr>td:first-child, table th{
 
 .bg-red {
     background: red;
+}
+
+.bg-blue {
+    background: #50bfff;
+}
+
+.bg-black {
+    background-color: black;
 }
