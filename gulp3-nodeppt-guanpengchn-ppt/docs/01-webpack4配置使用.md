@@ -49,10 +49,15 @@ headFiles: /assets/css/colors.css
 
 [slide]
 [magic data-transition="circle"]
-# gulp + webpack1
+# gulp
+
+<div>
+    <img src="/assets/images/gulp-structure.png" width="365px" height="463px">
+    <img src="/assets/images/gulp-task.png" class="ml-30" width="340px" height="382px">
+</div>
 
 ====
-# webpack3
+# webpack3(vue-admin-template)
 
 ====
 # webpack4
