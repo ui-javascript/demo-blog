@@ -182,8 +182,8 @@ npm i --save-dev html-webpack-plugin@next
 new MiniCssExtractPlugin({
   // Options similar to the same options in webpackOptions.output
   // both options are optional
-  filename: devMode ? "[name].css" : "[name].[hash].css",
-  chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
+  filename: devMode ? "[name].css" : "[name].[contenthash:8].css",
+  chunkFilename: devMode ? "[id].css" : "[id].[contenthash:8].css"
 });
 ```
 
@@ -207,7 +207,7 @@ new MiniCssExtractPlugin({
 # 3.热更新速度
 
 - 开发时不要压缩提取，计算hash等
-- souce map
+- souce map -> cheap-source-map
 - exclude/include -> 指定资源范围
 - babel-plugin-dynamic-import-node -> import()转化为require()
 
@@ -347,6 +347,9 @@ vue ui
 ====
 
 # 1.env 文件与环境设置
+
+- mode
+- env文件
 
 ```shell
 .env                # 在所有的环境中被载入
