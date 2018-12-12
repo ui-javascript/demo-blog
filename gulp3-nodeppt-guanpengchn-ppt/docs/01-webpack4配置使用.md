@@ -300,6 +300,20 @@ new MiniCssExtractPlugin({
 <img src="/assets/images/element/vue-loader-old.png" width=503 height=773> 
 </div>
 
+====
+
+# 拆包
+
+```shell
+1.基础类库 chunk-libs(vue/vuex/vue-router/axios)
+2.UI 组件库 chunk-elementUI
+3.自定义共用组件/函数 chunk-commons(Layout/Nav/Footer/...)
+4.低频组件 chunk-eachrts/chunk-xlsx等
+5.业务代码 lazy-loading xxxx.js
+```
+
+- https://panjiachen.gitee.io/vue-element-admin/bundle-report
+
 [/magic]
 
 
