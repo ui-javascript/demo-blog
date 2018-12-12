@@ -19,6 +19,7 @@ headFiles: /assets/css/melt.css
 - JavaScript生态圈调查报告 https://sdk.cn/news/7915
  
 ====
+
 # 构建工具
 
 - 构建工具 https://www.awesomes.cn/repos/Applications/Builds
@@ -28,6 +29,7 @@ headFiles: /assets/css/melt.css
 - (其他对手) yeoman/brunch/browserify/cooking 
 
 ====
+
 # 竞争历史
 
 - (竞争对手)gulp/parcel/rollup/fastpack/...
@@ -37,6 +39,7 @@ headFiles: /assets/css/melt.css
 - 将来, 干掉XYZ... -> webpackN
 
 ====
+
 # gulp
 
 <div>
@@ -56,11 +59,13 @@ headFiles: /assets/css/melt.css
 <img src="/assets/images/browser-sync.png" width=749 height=349>
 
 ====
+
 <div>
 <img src="/assets/images/browser-run.png" width=1497 height=491>
 </div> 
 
 ====
+
 # gulp的不足
 
 - 没有实现js-module -> require.js/sea.js手动注册
@@ -68,6 +73,7 @@ headFiles: /assets/css/melt.css
 - 浏览器多页应用(MPA)首选方案
 
 ====
+
 # 为什么使用webpack
 
 - 一站式的解决方案
@@ -75,6 +81,7 @@ headFiles: /assets/css/melt.css
 - 一家独大
 
 ====
+
 # 占比统计
 
 <img src="/assets/images/trend-build-stat.png">
@@ -83,6 +90,7 @@ headFiles: /assets/css/melt.css
 - https://stateofdev.com/c/javascript
 
 ====
+
 # webpack的不足
 
 - 配置复杂,学习成本高 -> webpack4
@@ -106,6 +114,7 @@ headFiles: /assets/css/melt.css
 - ...
 
 ====
+
 # 脚手架 | Scaffold
 
 - antd提供的脚手架市场 http://scaffold.ant.design/#/
@@ -116,6 +125,7 @@ headFiles: /assets/css/melt.css
 - ...
 
 ====
+
 # 快速构建 | Boilerplate
 
 <div>
@@ -159,6 +169,7 @@ npm i --save-dev html-webpack-plugin@next
 ```
 
 ====
+
 # 2.扬弃与加强
 
 - CommonsChunkPlugin -> optimization.splitChunks
@@ -177,20 +188,22 @@ new MiniCssExtractPlugin({
 ```
 
 ====
+
 # 3.常见问题
 
 - DeprecationWarning: Tapable.plugin is deprecated. Use new API on `.hooks` instead
-- cnpm安装各种诡异
+- cnpm安装各种诡异 -> node-sass下载???
 
 ```shell
 1.npm install --registry=https://registry.npm.taobao.org
 
 2.yarn install
 
-3.翻墙
+3.翻墙/proxy
 ```
 
 ====
+
 # 3.热更新速度
 
 - 开发时不要压缩提取，计算hash等
@@ -209,6 +222,7 @@ new MiniCssExtractPlugin({
 ```
 
 ====
+
 # 4.打包速度
 
 - Uglifyjs -> cache: true、parall: true
@@ -234,11 +248,13 @@ new MiniCssExtractPlugin({
     - 文档 https://doc.d2admin.fairyever.com/zh/
     
 ====
+
 # vue-element-admin
 
 ![](/assets/images/logo-element.png)
 
 ====
+
 # element-界面预览
 
 <img src="/assets/images/element-preview.png"> 
@@ -246,6 +262,7 @@ new MiniCssExtractPlugin({
 - https://panjiachen.github.io/vue-element-admin/#/dashboard
 
 ====
+
 # d2-admin
 
 <div> 
@@ -253,6 +270,7 @@ new MiniCssExtractPlugin({
 </div>
 
 ====
+
 # d2-界面预览
 
 <img src="/assets/images/d2-preview.png"> 
@@ -260,6 +278,7 @@ new MiniCssExtractPlugin({
 - https://d2admin.fairyever.com/#/demo/d2-crud/demo1
 
 ====
+
 # 目录对比
 
 <div>
@@ -267,8 +286,21 @@ new MiniCssExtractPlugin({
     <img src="/assets/images/structure-d2.png" class="ml-20" width=412 height=593> 
 </div>
 
-[/magic]
+====
 
+# build/util.js
+
+<img src="/assets/images/vue-loader-simplify.png"> 
+
+====
+
+# build/vue-loader.js
+
+<div>
+<img src="/assets/images/element/vue-loader-old.png" width=503 height=773> 
+</div>
+
+[/magic]
 
 
 [slide]
@@ -292,6 +324,7 @@ npm run serve
 ```
 
 ====
+
 # 界面预览
 
 ```shell
@@ -302,7 +335,8 @@ vue ui
 ![](/assets/images/vuecli-ui.png)
 
 ====
-# 界面的主要功能
+
+# 主要功能
 
 - 安装搜索依赖
 - 运行管理
@@ -311,6 +345,7 @@ vue ui
 - 可能官方接入vue生态
 
 ====
+
 # 1.env 文件与环境设置
 
 ```shell
@@ -338,11 +373,13 @@ plugins: [
 ```
 
 ====
+
 # 2.vue.config.js
 
 <img src="/assets/images/vue-cli3.png"> 
 
 ====
+
 # 2.vue.config.js
 
 - chainWebpack
@@ -383,11 +420,6 @@ chainWebpack 是链式修改
 [slide]
 [magic data-transition="circle"]
 
-# 旧版本vue-loader
-<div>
-<img src="/assets/images/element/vue-loader-old.png" width=503 height=773> 
-</div>
-====
 # webpack3
 # (vue-boilerplate-template)
 
@@ -399,6 +431,7 @@ chainWebpack 是链式修改
 - [Webpack 打包优化之体积篇](https://www.jeffjade.com/2017/08/06/124-webpack-packge-optimization-for-volume/)
 
 ====
+
 <img src="/assets/images/nicejade.png" width=677 height=127> 
 <img src="/assets/images/nicejade-gender.png" width=328 height=198> 
 
@@ -407,9 +440,11 @@ chainWebpack 是链式修改
 # 目录结构
 
 ====
+
 # 安装依赖
 
 ==== 
+
 # 陌生命令
 
 - yarn run build:dll -> 构建出 vendor.dll.js
@@ -417,6 +452,7 @@ chainWebpack 是链式修改
 - yarn run pretest -> 对生产环境所构建的包进行简单的“预测”
 
 ====
+
 # PWA
 
 - sw-precache-webpack-plugin 
