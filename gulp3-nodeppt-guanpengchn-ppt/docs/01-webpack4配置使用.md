@@ -1,7 +1,7 @@
 title: webpack4配置使用基础
 speaker: luo0412
 theme: dark
-headFiles: /assets/css/colors.css
+headFiles: /assets/css/melt.css
 
 
 
@@ -9,27 +9,26 @@ headFiles: /assets/css/colors.css
 [slide]
 # webpack配置使用基础
 ## 骆金参
-## 2018-12-13
+## 2018-12-12
 
 [slide]   
 [magic data-transition="circle"]
 
-<div class="tc">
-<img src="/assets/images/fe-build-stat.png" style="width: 700px;height:266px;">
-</div> 
+<img src="/assets/images/fe-tools-stat.png" class="mb-20">
 
+- JavaScript生态圈调查报告 https://sdk.cn/news/7915
  
 ====
 # 构建工具
 
 - 构建工具 https://www.awesomes.cn/repos/Applications/Builds
 - (一家独大) webpack
-- (竞争对手) parcel/rollup/fastpack/...
-- (早期对手) yeoman/brunch/browserify/cooking 
+- (正面对手) parcel/rollup/fastpack/...
 - (任务运行器) grunt -> gulp -> fis
+- (其他对手) yeoman/brunch/browserify/cooking 
 
 ====
-# 为什么使用webpack
+# 竞争历史
 
 - (竞争对手)gulp/parcel/rollup/fastpack/...
 - Gulp -> webpack2 
@@ -37,11 +36,7 @@ headFiles: /assets/css/colors.css
 - Parcel(零配置) -> webpack4
 - 将来, 干掉XYZ... -> webpackN
 
-[/magic]
-
-
-[slide]
-[magic data-transition="circle"]
+====
 # gulp
 
 <div>
@@ -68,20 +63,34 @@ headFiles: /assets/css/colors.css
 ====
 # gulp的不足
 
-- 不支持freemarker/thymeleaf/JSP等后台模板(视图)技术
-- 模块化(require.js/sea.js)手动注册
+- 没有实现js-module -> require.js/sea.js手动注册
 - 单页面应用方面输出乏力
 - 浏览器多页应用(MPA)首选方案
 
 ====
+# 为什么使用webpack
+
+- 一站式的解决方案
+- 良好的生态和维护团队
+- 一家独大
+
+====
+# 占比统计
+
+<img src="/assets/images/trend-build-stat.png">
+
+- https://www.npmtrends.com/webpack-vs-parcel-vs-browserify-vs-gulp
+- https://stateofdev.com/c/javascript
+
+====
 # webpack的不足
 
-- 配置复杂,学习成本高
-- 目前限制用于采用模块化开发的项目
-- SSR/语义化
+- 配置复杂,学习成本高 -> webpack4
+- 目前主要用于采用模块化开发的项目
+- 语义化 -> SSR
 - 浏览器单页应用(SPA)首选方案
-
 [/magic]
+
 
 
 [slide]
@@ -127,6 +136,258 @@ headFiles: /assets/css/colors.css
 
 [slide]
 [magic data-transition="circle"]
+# webpack4升级
+
+- [Webpack 4 和单页应用入门](https://github.com/wallstreetcn/webpack-and-spa-guide) 
+- 手摸手，带你用合理的姿势使用webpack4
+    - (上) https://juejin.im/post/5b56909a518825195f499806
+    - (下) https://juejin.im/post/5b5d6d6f6fb9a04fea58aabc
+    
+====
+
+# 1.升级
+
+- 升级Node.js -> nvm
+- 升级webpack -> webpack cli(提取命令行相关)
+- 升级依赖
+
+```shell
+npm install webpack@latest -g
+npm install webpack-cli -g
+
+npm i --save-dev html-webpack-plugin@next
+```
+
+====
+# 2.扬弃与加强
+
+- CommonsChunkPlugin -> optimization.splitChunks
+- NamedModulesPlugin/NamedChunksPlugin/DefinePlugin/... -> mode
+- extract-text-webpack-plugin -> mini-css-extract-plugin 
+- css压缩并优化 -> optimize-css-assets-webpack-plugin
+
+```js
+// hash > chunkhash > contenthash
+new MiniCssExtractPlugin({
+  // Options similar to the same options in webpackOptions.output
+  // both options are optional
+  filename: devMode ? "[name].css" : "[name].[hash].css",
+  chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
+});
+```
+
+====
+# 3.常见问题
+
+- DeprecationWarning: Tapable.plugin is deprecated. Use new API on `.hooks` instead
+- cnpm安装各种诡异
+
+```shell
+1.npm install --registry=https://registry.npm.taobao.org
+
+2.yarn install
+
+3.翻墙
+```
+
+====
+# 3.热更新速度
+
+- 开发时不要压缩提取，计算hash等
+- souce map
+- exclude/include -> 指定资源范围
+- babel-plugin-dynamic-import-node -> import()转化为require()
+
+```json
+{
+  "env": {
+    "development": {
+      "plugins": ["dynamic-import-node"]
+    }
+  }
+}
+```
+
+====
+# 4.打包速度
+
+- Uglifyjs -> cache: true、parall: true
+- dll
+- parallel-webpack 
+- happypack
+
+
+[/magic]
+
+
+[slide]
+[magic data-transition="circle"]
+
+# webpack4 + vue-cli3
+# (vue-admin && d2)
+
+- vue-admin-template 
+    - https://github.com/PanJiaChen/vue-admin-template
+    - 文档 https://panjiachen.github.io/vue-element-admin-site/
+- d2-admin 
+    - https://github.com/d2-projects/d2-admin
+    - 文档 https://doc.d2admin.fairyever.com/zh/
+    
+====
+# vue-element-admin
+
+![](/assets/images/logo-element.png)
+
+====
+# element-界面预览
+
+<img src="/assets/images/element-preview.png"> 
+ 
+- https://panjiachen.github.io/vue-element-admin/#/dashboard
+
+====
+# d2-admin
+
+<div> 
+ <img src="/assets/images/logo-d2.png" width=560 height=560> 
+</div>
+
+====
+# d2-界面预览
+
+<img src="/assets/images/d2-preview.png"> 
+
+- https://d2admin.fairyever.com/#/demo/d2-crud/demo1
+
+====
+# 目录对比
+
+<div>
+    <img src="/assets/images/structure-panjiachen.png" width=424 height=652> 
+    <img src="/assets/images/structure-d2.png" class="ml-20" width=412 height=593> 
+</div>
+
+[/magic]
+
+
+
+[slide]
+[magic data-transition="circle"]
+
+# vue-cli3
+
+- 官方文档 https://cli.vuejs.org/zh/guide/
+
+```shell 
+npm i -g @vue/cli
+
+npm i -g yarn
+# yarn global add @vue/cli
+
+vue create my-project
+
+cd vue-project
+npm run serve
+# yarn serve
+```
+
+====
+# 界面预览
+
+```shell
+# 运行
+vue ui
+```
+
+![](/assets/images/vuecli-ui.png)
+
+====
+# 界面的主要功能
+
+- 安装搜索依赖
+- 运行管理
+- 保存配置文件
+- 杀死端口
+- 可能官方接入vue生态
+
+====
+# 1.env 文件与环境设置
+
+```shell
+.env                # 在所有的环境中被载入
+.env.local          # 在所有的环境中被载入，但会被 git 忽略
+.env.[mode]         # 只在指定的模式中被载入
+.env.[mode].local   # 只在指定的模式中被载入，但会被 git 忽略
+
+# 优先级
+.env.[mode].local > .env.[mode] > .env.local > .env 
+
+# 如果没找到对应配置文件，其会使用默认环境 
+"scripts": {
+    "serve": "vue-cli-service serve --mode stage",
+}
+
+# 客户端注入
+plugins: [
+    new webpack.DefinePlugin({
+        'process.env': {
+            NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+        }
+    }),
+],
+```
+
+====
+# 2.vue.config.js
+
+<img src="/assets/images/vue-cli3.png"> 
+
+====
+# 2.vue.config.js
+
+- chainWebpack
+
+```js
+chainWebpack: config => {
+    config.module
+        .rule('images')
+        .use('url-loader')
+        .tap(options =>
+            merge(options, {
+              limit: 5120,
+            })
+        )
+}
+```
+
+<div class="tl">
+<img src="/assets/images/old-test.png"> 
+</div>
+
+- configureWebpack
+
+```
+chainWebpack 是链式修改
+而 configureWebpack 更倾向于整体替换和修改
+```
+
+
+[/magic]
+
+
+[slide]
+
+# 感谢倾听
+
+
+[slide]
+[magic data-transition="circle"]
+
+# 旧版本vue-loader
+<div>
+<img src="/assets/images/element/vue-loader-old.png" width=503 height=773> 
+</div>
+====
 # webpack3
 # (vue-boilerplate-template)
 
@@ -145,11 +406,8 @@ headFiles: /assets/css/colors.css
 
 # 目录结构
 
-
-
 ====
 # 安装依赖
-
 
 ==== 
 # 陌生命令
@@ -162,46 +420,5 @@ headFiles: /assets/css/colors.css
 # PWA
 
 - sw-precache-webpack-plugin 
-
-[/magic]
-
-
-[slide]
-[magic data-transition="circle"]
-# webpack4升级
-
-```
-<body>
-    <h1> Jade - node template engine </h1>
-</body>
-```
-
-====
-# webpack4 + vue-cli3
-# (vue-admin-template)
-
-
-[/magic]
-
-
-
-
-
-
-
-[slide]
-[magic data-transition="circle"]
-
-# 构建优化
-
-
-[/magic]
-
-
-[slide]
-[magic data-transition="circle"]
-
-# 多页面
-
 
 [/magic]
