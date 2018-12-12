@@ -304,7 +304,9 @@ new MiniCssExtractPlugin({
 
 # 拆包
 
-```shell
+- https://panjiachen.gitee.io/vue-element-admin/bundle-report
+
+```
 1.基础类库 chunk-libs(vue/vuex/vue-router/axios)
 2.UI 组件库 chunk-elementUI
 3.自定义共用组件/函数 chunk-commons(Layout/Nav/Footer/...)
@@ -312,7 +314,33 @@ new MiniCssExtractPlugin({
 5.业务代码 lazy-loading xxxx.js
 ```
 
-- https://panjiachen.gitee.io/vue-element-admin/bundle-report
+```
+optimization: {
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        libs: {
+          name: 'chunk-libs',
+          test: /[\\/]node_modules[\\/]/,
+          priority: 10,
+          chunks: 'initial' // 只打包初始时依赖的第三方
+        },
+        elementUI: {
+          name: 'chunk-elementUI', // 单独将 elementUI 拆包
+          priority: 20, // 权重要大于 libs 和 app 不然会被打包进 libs 或者 app
+          test: /[\\/]node_modules[\\/]element-ui[\\/]/
+        },
+        commons: {
+          name: 'chunk-commons',
+          test: resolve('src/components'), // 可自定义拓展你的规则
+          minChunks: 3, // 最小公用次数
+          priority: 5,
+          reuseExistingChunk: true
+        }
+      }
+    },
+}
+``` 
 
 [/magic]
 
