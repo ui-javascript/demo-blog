@@ -10,6 +10,11 @@
 + 用途(doc/api/blog/ppt)
 ```
 
+# TODO
+
+- nodePPT生成
+- static目录位置 -> 不破坏原来项目结构的情况下, vuepress生成站点
+- 三层目录结构
 
 
 
