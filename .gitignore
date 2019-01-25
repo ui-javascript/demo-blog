@@ -2,5 +2,6 @@
 .idea
 _tmp
 __tmp
+__cant-run-now
 node_modules
 dist
