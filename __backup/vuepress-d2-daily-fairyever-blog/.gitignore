@@ -1,0 +1,5 @@
+node_modules
+site/.vuepress/dist
+
+# 有任务会拷贝图片到此位置
+site/.vuepress/public

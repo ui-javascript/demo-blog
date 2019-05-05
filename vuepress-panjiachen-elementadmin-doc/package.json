@@ -9,9 +9,9 @@
     "remove": "rimraf node_modules",
     "preview": "serve -s dist -p 9567",
 
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "lint": "prettier --write 'docs/**/*.md'"
+    "dev": "vuepress dev ./",
+    "build": "vuepress build ./",
+    "lint": "prettier --write './**/*.md'"
   },
   "lint-staged": {
     "*.{js,json,css,md.vue}": [

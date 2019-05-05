@@ -1,13 +1,30 @@
-# vue-element-admin-site
-The documentation source of [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
+---
+home: true
+heroImage: /home.png
+title: a
+actionText: Get Started →
+actionLink: /guide/
+features:
+  - title: Feature-rich
+    details: Typical templates for enterprise applications and various components
+  - title: Best Practice
+    details: Reasonable framework choice, good engineering practice
+  - title: Up-to-date Dev Stack
+    details: Development using front-end advanced technology
+  - title: Permission Validation
+    details: Dynamic loading of route and rendering sidebar based on permissions
+  - title: Globalization
+    details: Built-in industry universal international solution
+  - title: Theming
+    details: Supports multiple dynamic skin methods
+footer: MIT Licensed | Copyright © 2017-present PanJiaChen
+---
 
-[Online](https://panjiachen.github.io/vue-element-admin-site)
-
-## Development
+## Getting Started
 
 ```bash
 # clone the project
-git clone git@github.com:PanJiaChen/vue-element-admin-site.git
+git clone https://github.com/PanJiaChen/vue-element-admin.git
 
 # install dependency
 npm install
@@ -15,7 +32,3 @@ npm install
 # develop
 npm run dev
 ```
-
-open http://localhost:8080/vue-element-admin-site/
-
-> Generator by [vuepress](https://github.com/vuejs/vuepress)
