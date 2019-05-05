@@ -24,12 +24,16 @@ gulp.task('copyStaticImages', function () {
 // 路径替换
 gulp.task('cdnPre', function() {
     return gulp
-        .src('.vuepress/dist/**/*.html')
+        .src([
+            '.vuepress/dist/**/*.{html,js}',
+            ])
         .pipe(
-                gulpReplace(/"[./]*static\/images/g, '/blog-web/static/images')
+            gulpReplace(/(?<!blog-web\/)static\/images/g, 'blog-web/static/images')
         )
         .pipe(gulp.dest('.vuepress/dist'));
 });
+
+
 
 // shell中执行命令生成文件
 gulp.task('build', ['clean'], () => {
