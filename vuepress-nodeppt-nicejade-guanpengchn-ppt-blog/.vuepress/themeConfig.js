@@ -1,9 +1,11 @@
-const helper = require('./helper')
+const helper = require('./utils')
 
 module.exports = {
-  repo: 'nicejade/vuepress-web-app',
+  repo: 'luo0412',
   editLinks: false,
-  docsDir: './dist',
+  docsDir: '.vuepress/dist',
+
+  // TODO 搜索APIkey
   algolia: {
     apiKey: '6290673b2059b2332d64c13d248877ad',
     indexName: 'lovejade',
@@ -28,15 +30,15 @@ module.exports = {
       nav: [
         {
           text: '博客',
-          link: '/01_blog/',
+          link: '/ch1-blog/',
         },
         {
           text: '文章',
-          link: '/02_article/'
+          link: '/ch2-article/'
         },
         // {
         //   text: '应用',
-        //   link: '/03_application/'
+        //   link: '/ch3-application/'
         // },
         // {
         //   text: '招聘',
@@ -44,8 +46,8 @@ module.exports = {
         // }
       ],
       sidebar: {
-        '/01_blog/': helper.utils.genSidebarConfig('轩帅の博客', './01_blog/', false),
-        '/02_article/': helper.utils.genSidebarConfig('最新文章', './02_article/', false)
+        '/ch1-blog/': helper.utils.genSidebarConfig('轩帅の博客', './ch1-blog/', false),
+        '/ch2-article/': helper.utils.genSidebarConfig('最新文章', './ch2-article/', false)
       }
     },
 
@@ -57,7 +59,7 @@ module.exports = {
       nav: [
         {
           text: 'Application',
-          link: '/_en/03_application/'
+          link: '/_en/ch3-application/'
         }
       ]
     }

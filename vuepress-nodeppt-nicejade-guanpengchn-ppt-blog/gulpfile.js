@@ -28,6 +28,7 @@ gulp.task('cdnPre', function() {
             '.vuepress/dist/**/*.{html,js}',
             ])
         .pipe(
+
             gulpReplace(/(?<!blog-web\/)static\/images/g, 'blog-web/static/images')
         )
         .pipe(gulp.dest('.vuepress/dist'));
