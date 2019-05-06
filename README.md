@@ -1,6 +1,8 @@
 # README
 
 - 一些技术文档与博客 PPT
+  - @blog https://luo0412.github.io/blog-web/
+  - @https://luo0412.github.io/ppt-web/
 - 命名
 
 ```
