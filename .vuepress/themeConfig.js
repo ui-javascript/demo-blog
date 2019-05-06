@@ -85,7 +85,7 @@ module.exports = {
             lastUpdated: 'Last Updated',
             nav: [
                 {
-                    text: 'Application',
+                    text: 'Tools',
                     link: '/_en/ch1-tools-edge/'
                 }
             ]
