@@ -2,7 +2,7 @@ title: 前端生态简介
 speaker: aaron
 theme: colors
 transition: slide2
-headFiles: /static/css/colors.css
+headFiles: ../static/css/colors.css
 
 [slide]
 

@@ -8,13 +8,14 @@
     "install@needproxy": "npm install",
     "remove": "rimraf node_modules",
     "preview": "cd ./dist && serve -s -p 8088",
-    "dev:vuepress": "gulp copyStaticImages && vuepress dev ",
-    "build:vuepress": "gulp copyStaticImages && vuepress build && gulp cdnPre",
+    "dev:vuepress": "gulp copyVuepressStatic && vuepress dev",
+    "build:vuepress": "gulp copyVuepressStatic && vuepress build && gulp cdnPre",
     "deploy:vuepress": "bash deploy.vuepress.sh",
     "prettier": "prettier --write '**/*.md'",
     "prettier-watch": "onchange '**/*.md' -- prettier --write {{changed}}",
-    "dev:nodeppt": "cd .nodeppt && nodeppt start -w",
-    "build:nodeppt": "gulp build",
+
+    "dev:nodeppt": "gulp copyNodePPTStatic && cd .nodeppt && nodeppt start -w",
+    "build:nodeppt": "gulp copyNodePPTStatic && gulp build",
     "deploy:nodeppt": "bash deploy-nodeppt.sh",
     "deploy:nodeppt-gulp": "gulp deploy"
   },

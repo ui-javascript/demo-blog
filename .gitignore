@@ -25,3 +25,4 @@ yarn-error.log*
 
 # Custom 自定义
 .vuepress/public/static/*
+.nodeppt/static/*

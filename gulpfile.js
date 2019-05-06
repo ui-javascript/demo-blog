@@ -7,13 +7,14 @@ const gulpReplace = require('gulp-replace')
 // 删除之前生成的dist目录
 gulp.task('clean', function (cb) {
   return del([
-    'dist/',
-    '.publish/'
+    '.nodeppt/dist/',
+    '.vuepress/dist/',
+    // '.publish/'
   ], cb);
 });
 
 // 搬运图片
-gulp.task('copyStaticImages', function () {
+gulp.task('copyVuepressStatic', function () {
     // 搬运图片
     return gulp.src([
         `static/**/*.*`
@@ -21,7 +22,15 @@ gulp.task('copyStaticImages', function () {
     .pipe(gulp.dest(`.vuepress/public/static`))
 })
 
-// 路径替换
+gulp.task('copyNodePPTStatic', function () {
+    // 搬运图片
+    return gulp.src([
+        `static/**/*.*`
+    ])
+        .pipe(gulp.dest(`.nodeppt/static`))
+})
+
+// vuepress打包文件路径替换
 gulp.task('cdnPre', function() {
     return gulp
         .src([
