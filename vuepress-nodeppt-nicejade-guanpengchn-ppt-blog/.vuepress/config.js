@@ -28,7 +28,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '静晴轩别苑',
+      title: 'xxxxxx',
       description: '描述一番',
       serviceWorker: {
         updatePopup: {

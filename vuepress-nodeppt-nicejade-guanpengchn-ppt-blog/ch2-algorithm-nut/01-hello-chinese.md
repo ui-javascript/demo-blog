@@ -1,5 +1,5 @@
 ---
-title: 哇哈哈
+title: blog1
 lang: zh-CN
 datetime: 2018-06-18
 meta:

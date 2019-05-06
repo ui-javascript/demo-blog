@@ -1,6 +1,6 @@
 <p align="center"><a href="https://nice.lovejade.cn" target="_blank"><img width="100"src="https://nice.lovejade.cn/love.svg"></a></p>
 
-<h1 align="center">静晴轩别苑</h1>
+<h1 align="center">xxxxxx</h1>
 
 <div align="center">
   <strong>
@@ -10,7 +10,7 @@
 
 ## 目标与哲学
 
-[静晴轩别苑](https://nice.lovejade.cn)的诞生，其初衷完全是为了体验 `VuePress`: Vue 驱动的静态网站生成器。[VuePress](https://vuepress.vuejs.org/) 由两部分组成：一部分是支持用 `Vue` 开发主题的极简静态网站生成器，另一个部分是为书写技术文档而优化的默认主题。它的诞生初衷是为了支持 `Vue` 及其子项目的文档需求。
+[xxxxxx](https://nice.lovejade.cn)的诞生，其初衷完全是为了体验 `VuePress`: Vue 驱动的静态网站生成器。[VuePress](https://vuepress.vuejs.org/) 由两部分组成：一部分是支持用 `Vue` 开发主题的极简静态网站生成器，另一个部分是为书写技术文档而优化的默认主题。它的诞生初衷是为了支持 `Vue` 及其子项目的文档需求。
 
 每一个由 `VuePress` 生成的页面都带有预渲染好的 HTML，也因此具有非常好的加载性能和搜索引擎优化（`SEO`）。同时，一旦页面被加载，Vue 将接管这些静态内容，并将其转换成一个完整的单页应用（`SPA`），其他的页面则会只在用户浏览到的时候才按需加载。除此之外，它还内置了以下优秀特性：
 
@@ -61,7 +61,7 @@ yarn deploy
 - [**倾城之链**](https://nicelinks.site?from=github)
 - [About Me](https://about.me/nicejade?from=github)
 - [个人博客](https://jeffjade.com/nicelinks?from=github)
-- [静晴轩别苑](https://nice.lovejade.cn/?from=github)
+- [xxxxxx](https://nice.lovejade.cn/?from=github)
 - [吾意静晴轩](https://docz.lovejade.cn/?from=github)
 - [天意人间舫](https://blog.lovejade.cn/?from=github)
 - [新浪微博](https://weibo.com/jeffjade?from=github)
